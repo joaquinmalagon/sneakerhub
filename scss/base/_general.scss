@@ -1,0 +1,40 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Assistant', sans-serif;
+}
+h1,
+h2{
+    font-weight: bold;
+    color: black;
+}
+h3{
+    font-weight: bold;
+    color: black;
+    font-size: 32px;
+}
+h4{
+    font-weight: bold;
+    color: black;
+    font-size: 16px;
+    text-decoration-thickness: 0.01px;
+}
+p{
+    color: black;
+}
+hr{
+    margin: 0px;
+    z-index: 1;
+    position: relative;
+}
+button:not(.open-menu):not(.close-menu):hover{
+    scale: 1.05;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+main{
+    margin-top: 110px;
+}

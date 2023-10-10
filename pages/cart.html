@@ -10,14 +10,14 @@
     <!-- ICONS BOOSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="../img/favicon.png">
 </head>
 <body>
     <header>
         <!-- MENU -->
-        <div class="conteiner-header">
+        <div class="container-header">
             <button id="open" class="open-menu"><i class="bi bi-list"></i></button>
             <div class="logo">
                 <a href="../index.html"><img src="../img/logo.png" alt="Logo" width="30px"></a>
@@ -25,11 +25,14 @@
             <nav id="nav" class="nav">
                 <button id="close" class="close-menu"><i class="bi bi-x"></i></button>
                 <ul class="nav-list">
-                    <li><a href="../index.html">HOME</a>
+                    <li>
+                        <a href="../index.html">HOME</a>
                     </li>
-                    <li><a href="../pages/shop.html">SHOP</a>
+                    <li>
+                        <a href="../pages/shop.html">SHOP</a>
                     </li>
-                    <li><a href="../pages/contact.html">CONTACT</a>
+                    <li>
+                        <a href="../pages/contact.html">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -38,10 +41,11 @@
                 <a class="user" href="../pages/login.html"><img src="../img/user.png" alt="Logo" width="25px"></a>
             </div>
         </div>
+        <hr>
     </header>
     <main>
         <!-- MAIN CART -->
-        <section class="main-cart">
+        <section>
             <h1 class="tittle-page">MY CART</h1>
             <p class="p-cart">Your cart is currently empty. Add some sneakers and keep shopping!</p>
             <a href="../pages/shop.html">
@@ -51,13 +55,13 @@
         <!-- ARTICLES -->
         <section>
             <p class="p-take">Take a look at these recommendations.</p>
-            <div class="conteiner-articles">
+            <div class="container-articles">
                 <div class="product">
                     <img class="img-article" src="../img/article1.png" alt="article" width="400px">
                     <h4 class="tittle-article">Shoes Air Jordan 1 Mid SE</h4>
                     <p class="p-article">$340 USD</p>
                 </div>
-                <div class="product">
+                <div class="product-mid">
                     <img class="img-article" src="../img/article2.png" alt="article" width="400px">
                     <h4 class="tittle-article">Shoes Air Jordan 1 Mid</h4>
                     <p class="p-article">$230 USD</p>
@@ -71,18 +75,56 @@
         </section>
     </main>
         <!-- FOOTER -->
-    <footer>
-        <div class="conteiner-footer">
-            <div class="copyright">
-                <p>Copyright © 2023 SneakerShop ®. All rights reserved</p>
+        <footer>
+            <hr>
+            <div class="container-footer">
+                <div class="info-help">
+                    <h4 class="tittle-menu">INFO</h4>
+                    <div class="menu-footer">
+                        <ul>
+                            <li>
+                                <a href="#">HOW TO BUY?</a>
+                            </li>
+                            <li>
+                                <a href="#">PAYMENT METHODS</a>
+                            </li>
+                            <li>
+                                <a href="#">SHIPPING</a>
+                            </li>
+                            <li>
+                                <a href="#">HELP</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-us">
+                    <h4 class="tittle-menu">ABOUT US</h4>
+                    <div class="menu-footer">
+                        <ul>
+                            <li>
+                                <a href="#">LOCAL</a>
+                            </li>
+                            <li>
+                                <a href="#">WHOLESALE</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">T&C</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="socialmedia">
+                    <div class="container-socialmedia">
+                        <a class="icon-start" href="https://www.twitter.com" target="_blank"><img src="../img/twitter.png" width="17px" alt="twitter"></a>
+                        <a class="icon-mid" href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png" width="17px" alt="instagram"></a>
+                        <a class="icon-end" href="https://www.whatsapp.com" target="_blank"><img src="../img/whatsapp.png" width="17px" alt="whatsapp"></a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <a class="socialmedia" href="https://www.twitter.com" target="_blank"><img src="../img/twitter.png" alt="twitter"></a>
-                <a class="socialmedia" href="https://www.instagram.com" target="_blank"><img src="../img/instagram.png" alt="instagram"></a>
-                <a class="socialmedia" href="https://www.whatsapp.com" target="_blank"><img src="../img/whatsapp.png" alt="whatsapp"></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
     <!-- JS -->
     <script src="../js/main.js"></script>
 </body>

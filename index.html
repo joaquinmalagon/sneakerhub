@@ -12,12 +12,12 @@
     <!-- FAVICON -->
     <link rel="icon" type="image/png" href="./img/favicon.png">
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <header>
         <!-- MENU -->
-        <div class="conteiner-header">
+        <div class="container-header">
             <button id="open" class="open-menu"><i class="bi bi-list"></i></button>
             <div class="logo">
                 <a href="index.html"><img src="img/logo.png" alt="Logo" width="30px"></a>
@@ -25,11 +25,14 @@
             <nav id="nav" class="nav">
                 <button id="close" class="close-menu"><i class="bi bi-x"></i></button>
                 <ul class="nav-list">
-                    <li><a href="./index.html">HOME</a>
+                    <li>
+                        <a href="./index.html">HOME</a>
                     </li>
-                    <li><a href="./pages/shop.html">SHOP</a>
+                    <li>
+                        <a href="./pages/shop.html">SHOP</a>
                     </li>
-                    <li><a href="./pages/contact.html">CONTACT</a>
+                    <li>
+                        <a href="./pages/contact.html">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -38,10 +41,11 @@
                 <a class="user" href="./pages/login.html"><img src="img/user.png" alt="Logo" width="25px"></a>
             </div>
         </div>
+        <hr>
     </header>
     <main>
         <!-- HERO -->
-        <section class="hero">
+        <section>
             <img class="sneakerhub" src="./img/sneakerhub.svg" alt="img-main"> 
             <div class="p-main">
                 <p>Welcome to SneakerHub, where we turn your sneaker dreams into reality! Browse our collection of the latest and greatest sneakers from all your favorite brands.</p>
@@ -53,16 +57,16 @@
         <hr>
         <!-- OUR TOP PICKS -->
         <section>
-            <h3 class="tittle-section">OUR TOP PICKS</h3>
-            <div class="conteiner-shoe">
+            <h2 class="tittle-section">OUR TOP PICKS</h2>
+            <div class="container-shoe">
                 <img class="shoe1" src="img/sneaker1.png" alt="shoe 1" max-width="1280px">
                 <img class="shoe2" src="img/snkear2.png" alt="shoe 2" max-width="635px">
                 <img class="shoe3" src="img/snkear3.png" alt="shoe 3" max-width="635px">
             </div>
         </section>
         <!-- CALL TO ACTION -->
-        <section class="calltoaction">
-            <h3 class="tittle-section">READY, SET, SHOP!</h3>
+        <section>
+            <h2 class="tittle-section">READY, SET, SHOP!</h2>
             <p class="p-main" >Get ready to join a community of fellow sneaker lovers who won't settle for anything but the best. Step out in style and show the world your unique taste in sneakers.</p>
             <a href="./pages/shop.html">
                 <button class="button-shop">Shop</button>
@@ -70,18 +74,18 @@
         </section>
         <!-- ARTICLES -->
         <section>
-            <div class="conteiner-articles">
-                <div class="product">
+            <div class="container-articles">
+                <div>
                     <img class="img-article" src="img/article1.png" alt="article" width="400px">
                     <h4 class="tittle-article">Shoes Air Jordan 1 Mid SE</h4>
                     <p class="p-article">$340 USD</p>
                 </div>
-                <div class="product">
+                <div class="product-mid">
                     <img class="img-article" src="img/article2.png" alt="article" width="400px">
                     <h4 class="tittle-article">Shoes Air Jordan 1 Mid</h4>
                     <p class="p-article">$230 USD</p>
                 </div>
-                <div class="product">
+                <div>
                     <img class="img-article" src="img/article3.png" alt="article" width="400px">
                     <h4 class="tittle-article">Shoes Air Jordan 1 Low SE</h4>
                     <p class="p-article">$400 USD</p>
@@ -90,19 +94,57 @@
         </section>
         <!-- FINAL TEXT -->
         <section>
-            <h2 class="final-text">"WE SELL SNEAKERS. YOU GIVE LIFE"</h2>
+            <h3 class="final-text">"WE SELL SNEAKERS. YOU GIVE LIFE"</h3>
         </section>
     </main>
         <!-- FOOTER -->
     <footer>
-        <div class="conteiner-footer">
-            <div class="copyright">
-                <p>Copyright © 2023 SneakerShop ®. All rights reserved</p>
+        <hr>
+        <div class="container-footer">
+            <div class="info-help">
+                <h4 class="tittle-menu">INFO</h4>
+                <div class="menu-footer">
+                    <ul>
+                        <li>
+                            <a href="#">HOW TO BUY?</a>
+                        </li>
+                        <li>
+                            <a href="#">PAYMENT METHODS</a>
+                        </li>
+                        <li>
+                            <a href="#">SHIPPING</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div>
-                <a class="socialmedia" href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" alt="twitter"></a>
-                <a class="socialmedia" href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
-                <a class="socialmedia" href="https://www.whatsapp.com" target="_blank"><img src="img/whatsapp.png" alt="whatsapp"></a>
+            <div class="about-us">
+                <h4 class="tittle-menu">ABOUT US</h4>
+                <div class="menu-footer">
+                    <ul>
+                        <li>
+                            <a href="#">LOCAL</a>
+                        </li>
+                        <li>
+                            <a href="#">WHOLESALE</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">T&C</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socialmedia">
+                <div class="container-socialmedia">
+                    <a class="icon-start" href="https://www.twitter.com" target="_blank"><img src="img/twitter.png" width="17px" alt="twitter"></a>
+                    <a class="icon-mid" href="https://www.instagram.com" target="_blank"><img src="img/instagram.png" width="17px" alt="instagram"></a>
+                    <a class="icon-end" href="https://www.whatsapp.com" target="_blank"><img src="img/whatsapp.png" width="17px" alt="whatsapp"></a>
+                </div>
             </div>
         </div>
     </footer>

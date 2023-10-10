@@ -1,0 +1,425 @@
+/* GENERAL */
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Assistant", sans-serif;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  color: black;
+}
+
+h3 {
+  font-weight: bold;
+  color: black;
+  font-size: 32px;
+}
+
+h4 {
+  font-weight: bold;
+  color: black;
+  font-size: 16px;
+  text-decoration-thickness: 0.01px;
+}
+
+p {
+  color: black;
+}
+
+hr {
+  margin: 0px;
+  z-index: 1;
+  position: relative;
+}
+
+button:not(.open-menu):not(.close-menu):hover {
+  scale: 1.05;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+main {
+  margin-top: 110px;
+}
+
+/* HEADER */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: white;
+}
+header .container-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 50px;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header .container-header .open-menu {
+  display: none;
+}
+header .container-header .close-menu {
+  display: none;
+}
+header .container-header .nav {
+  padding-left: 65px;
+  z-index: 2;
+}
+header .container-header .nav .nav-list {
+  list-style: none;
+  display: flex;
+  padding: 0px;
+  margin: 0px;
+}
+header .container-header .nav .nav-list li a {
+  padding: 0px 25px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+}
+header .container-header .nav .nav-list li a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+}
+header .container-header .cart,
+header .container-header .user {
+  padding: 10px;
+}
+
+/* MAIN-INDEX */
+section {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 50px;
+  text-align: center;
+}
+section .sneakerhub {
+  /* HERO */
+  max-width: 1100px;
+  width: 100%;
+  padding-bottom: 30px;
+  padding-top: 175px;
+}
+section .p-main {
+  max-width: 1000px;
+  font-size: 22px;
+  margin: auto;
+}
+section .button-shop {
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  margin: 50px 0px;
+  font-size: 16px;
+}
+section .tittle-section {
+  /* OUR TOP PICKS */
+  font-size: 32px;
+  padding: 140px 0px 30px;
+  text-align: center;
+}
+section .container-shoe {
+  display: grid;
+  grid-template-areas: "shoe1 shoe1" "shoe2 shoe3";
+}
+section .container-shoe .shoe1 {
+  grid-area: shoe1;
+  padding-bottom: 5px;
+}
+section .container-shoe .shoe2 {
+  grid-area: shoe2;
+  padding-right: 2.5px;
+}
+section .container-shoe .shoe3 {
+  grid-area: shoe3;
+  padding-left: 2.5px;
+}
+section .container-shoe .shoe1,
+section .container-shoe .shoe2,
+section .container-shoe .shoe3 {
+  border-radius: 20px;
+  width: 100%;
+  margin: 0px;
+}
+section .container-articles {
+  /* ARTICLES */
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 0px;
+  padding: 50px 0px;
+}
+section .product-mid {
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+section .tittle-article {
+  padding-top: 20px;
+}
+section .img-article {
+  border-radius: 25px;
+  width: 100%;
+}
+section .img-article:hover {
+  scale: 1.05;
+  box-shadow: 1px 1px 2px rgba(126, 126, 126, 0.3);
+  cursor: pointer;
+}
+section .final-text {
+  /* FINAL TEXT */
+  font-size: 36px;
+  font-weight: lighter;
+  padding: 100px 0px;
+  text-align: center;
+}
+
+/* MAIN SHOP*/
+section .p-shop {
+  font-size: 22px;
+  text-align: center;
+  margin: 0px;
+}
+
+/* MAIN CONTACT */
+section .p-contact {
+  font-size: 20px;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+  padding-bottom: 50px;
+}
+section .container .row #form-contact .form-floating textarea {
+  height: 200px;
+}
+section .container .row #form-contact #button-contact {
+  margin-bottom: 100px;
+}
+
+/* MAIN CART */
+section .tittle-page {
+  font-size: 34px;
+  padding: 50px 0px;
+  text-align: center;
+  margin: 0px;
+}
+section .p-cart {
+  font-size: 30px;
+  text-align: center;
+}
+section .p-take {
+  font-size: 22px;
+  text-align: center;
+  margin: 100px 0px 35px;
+}
+
+/* MAIN LOGIN*/
+section .p-login {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+section .text-login {
+  font-size: 20px;
+  text-align: center;
+  padding: 100px 0px;
+  margin: 0px;
+}
+section .text-login span {
+  text-decoration: underline 1px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+section .container .row {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+}
+
+/* FOOTER */
+footer {
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+footer .container-footer {
+  max-width: 1280px;
+  padding: 50px 50px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  grid-template-columns: auto auto 185px;
+  grid-template-rows: auto;
+  grid-template-areas: "menu1 menu2 menu3";
+}
+footer .container-footer .info-help {
+  grid-area: menu1;
+}
+footer .container-footer .about-us {
+  grid-area: menu2;
+}
+footer .container-footer .info-help,
+footer .container-footer .about-us {
+  padding-right: 20px;
+}
+footer .container-footer .info-help .tittle-menu,
+footer .container-footer .about-us .tittle-menu {
+  padding-bottom: 8px;
+}
+footer .container-footer .info-help .menu-footer,
+footer .container-footer .about-us .menu-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+footer .container-footer .info-help .menu-footer ul,
+footer .container-footer .about-us .menu-footer ul {
+  padding: 0px;
+}
+footer .container-footer .info-help .menu-footer ul li,
+footer .container-footer .about-us .menu-footer ul li {
+  list-style: none;
+  padding-bottom: 8px;
+}
+footer .container-footer .info-help .menu-footer ul li a,
+footer .container-footer .about-us .menu-footer ul li a {
+  text-decoration: none;
+  color: black;
+}
+footer .container-footer .info-help .menu-footer ul li a:hover,
+footer .container-footer .about-us .menu-footer ul li a:hover {
+  color: #888888;
+}
+footer .container-footer .socialmedia {
+  grid-area: menu3;
+}
+footer .container-footer .socialmedia .container-socialmedia {
+  display: flex;
+  flex-direction: row;
+  margin: auto;
+  padding: 15px;
+  padding-top: 50px;
+}
+footer .container-footer .socialmedia .container-socialmedia .icon-start {
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  padding: 16px 18px;
+  border-left: 1px solid #c2c2c2;
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+}
+footer .container-footer .socialmedia .container-socialmedia .icon-mid {
+  padding: 16px 18px;
+  border: 1px solid #c2c2c2;
+}
+footer .container-footer .socialmedia .container-socialmedia .icon-end {
+  padding: 16px 18px;
+  border-right: 1px solid #c2c2c2;
+  border-top: 1px solid #c2c2c2;
+  border-bottom: 1px solid #c2c2c2;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+/* RESPONSIVE MOBILE */
+@media screen and (max-width: 600px) {
+  /* HAMBURGUER MENU*/
+  header {
+    position: static;
+  }
+  header .container-header .open-menu,
+  header .container-header .close-menu {
+    display: block;
+    border: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+    padding: 55px 50px;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+  }
+  header .nav .nav-list {
+    flex-direction: column;
+    align-items: start;
+  }
+  header .nav .nav-list li {
+    align-items: start;
+    padding-bottom: 10px;
+  }
+  header .nav .nav-list li a {
+    text-decoration-thickness: 0.1px;
+    padding: 0px !important;
+  }
+  header nav.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* MAIN INDEX */
+  section .sneakerhub {
+    /* HERO */
+    padding-top: 80px;
+  }
+  section .p-main {
+    font-size: 18px;
+  }
+  section .tittle-section {
+    font-size: 26px;
+    padding: 80px 0px 20px;
+  }
+  section .container-shoe {
+    /* OUR TOP PICKS */
+    grid-template-areas: "shoe1 shoe1" "shoe2 shoe2" "shoe3 shoe3";
+  }
+  section .shoe1 {
+    display: none;
+  }
+  section .shoe2 {
+    padding-bottom: 5px;
+  }
+  section .container-articles {
+    /* ARTICLES */
+    flex-direction: column;
+  }
+  section .product-mid {
+    margin: 20px 0px;
+  }
+  section .final-text {
+    /* FINAL TEXT*/
+    padding: 50px 0px;
+  }
+  /* FOOTER*/
+  footer .container-footer {
+    grid-template-columns: auto auto;
+    grid-template-rows: 200px;
+    grid-template-areas: "menu1 menu2" "menu3 menu3";
+  }
+  footer .container-footer .socialmedia .container-socialmedia {
+    padding: 0px;
+    padding-top: 50px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

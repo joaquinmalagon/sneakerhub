@@ -1,0 +1,78 @@
+/* FOOTER */
+footer{
+    padding-bottom: 10px;
+    padding-top: 50px;
+    .container-footer{
+        max-width: 1280px;
+        padding: 50px 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto auto 185px;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "menu1 menu2 menu3";
+        .info-help{
+            grid-area: menu1;
+        }
+        .about-us{
+            grid-area: menu2;
+        }
+        .info-help,
+        .about-us{
+            padding-right: 20px;
+            .tittle-menu{
+                padding-bottom: 8px;
+            }
+            .menu-footer{
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                ul{
+                    padding: 0px;
+                    li{
+                        list-style: none;
+                        padding-bottom: 8px;
+                        a{
+                            text-decoration: none;
+                            color: black;
+                            &:hover{
+                                color: #888888;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .socialmedia{
+            grid-area: menu3;
+            .container-socialmedia{
+                display: flex;
+                flex-direction: row;
+                margin: auto;
+                padding: 15px;
+                padding-top: 50px;
+                .icon-start{
+                    border-top-left-radius: 50px;
+                    border-bottom-left-radius: 50px;
+                    padding: 16px 18px;
+                    border-left: 1px solid #c2c2c2;
+                    border-top: 1px solid #c2c2c2;
+                    border-bottom: 1px solid #c2c2c2;
+                }
+                .icon-mid{
+                    padding: 16px 18px;
+                    border: 1px solid #c2c2c2;
+                }
+                .icon-end{
+                    padding: 16px 18px;
+                    border-right: 1px solid #c2c2c2;
+                    border-top: 1px solid #c2c2c2;
+                    border-bottom: 1px solid #c2c2c2;
+                    border-top-right-radius: 50px;
+                    border-bottom-right-radius: 50px;
+                }
+            }
+        }
+    }    
+}
