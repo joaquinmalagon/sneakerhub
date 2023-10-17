@@ -22,5 +22,11 @@ section{
             justify-content: center;
             text-align: start;
         }
+        #button-login{
+            background-color: $black;
+            border: none;
+            padding: $size-buttons;
+            border-radius: $border-buttons;
+        }
     }
 }

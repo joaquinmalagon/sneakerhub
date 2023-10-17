@@ -31,7 +31,8 @@ hr{
     position: relative;
 }
 button:not(.open-menu):not(.close-menu):hover{
-    scale: 1.05;
+    transition: 0.1s;
+    transform: scale(1.05);
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     cursor: pointer;
 }

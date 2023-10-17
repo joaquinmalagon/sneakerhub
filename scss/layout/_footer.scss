@@ -35,9 +35,9 @@ footer{
                         padding-bottom: 8px;
                         a{
                             text-decoration: none;
-                            color: black;
+                            color: $black;
                             &:hover{
-                                color: #888888;
+                                color: $grey;
                             }
                         }
                     }
@@ -56,19 +56,19 @@ footer{
                     border-top-left-radius: 50px;
                     border-bottom-left-radius: 50px;
                     padding: 16px 18px;
-                    border-left: 1px solid #c2c2c2;
-                    border-top: 1px solid #c2c2c2;
-                    border-bottom: 1px solid #c2c2c2;
+                    border-left: 1px solid $grey;
+                    border-top: 1px solid $grey;
+                    border-bottom: 1px solid $grey;
                 }
                 .icon-mid{
                     padding: 16px 18px;
-                    border: 1px solid #c2c2c2;
+                    border: 1px solid $grey;
                 }
                 .icon-end{
                     padding: 16px 18px;
-                    border-right: 1px solid #c2c2c2;
-                    border-top: 1px solid #c2c2c2;
-                    border-bottom: 1px solid #c2c2c2;
+                    border-right: 1px solid $grey;
+                    border-top: 1px solid $grey;
+                    border-bottom: 1px solid $grey;
                     border-top-right-radius: 50px;
                     border-bottom-right-radius: 50px;
                 }

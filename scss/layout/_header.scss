@@ -4,7 +4,7 @@ header{
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: white;
+    background: $white;
     .container-header{
         display: flex;
         justify-content: space-between;
@@ -32,7 +32,7 @@ header{
                         padding: 0px 25px;
                         text-decoration: none;
                         font-size: 20px;
-                        color: black;
+                        color: $black;
                         &:hover{
                             text-decoration: underline;
                             text-decoration-thickness: 1px;

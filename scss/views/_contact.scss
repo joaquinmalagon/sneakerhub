@@ -17,6 +17,10 @@ section{
                 }
                 #button-contact{
                     margin-bottom: 100px;
+                    background-color: $black;
+                    border: none;
+                    padding: $size-buttons;
+                    border-radius: $border-buttons;
                 }
             }
         }

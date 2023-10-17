@@ -37,7 +37,8 @@ hr {
 }
 
 button:not(.open-menu):not(.close-menu):hover {
-  scale: 1.05;
+  transition: 0.1s;
+  transform: scale(1.05);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
@@ -52,7 +53,7 @@ header {
   top: 0;
   width: 100%;
   z-index: 1000;
-  background: white;
+  background: #ffffff;
 }
 header .container-header {
   display: flex;
@@ -83,7 +84,7 @@ header .container-header .nav .nav-list li a {
   padding: 0px 25px;
   text-decoration: none;
   font-size: 20px;
-  color: black;
+  color: #000000;
 }
 header .container-header .nav .nav-list li a:hover {
   text-decoration: underline;
@@ -102,6 +103,9 @@ section {
   padding: 0px 50px;
   text-align: center;
 }
+section .h1sh {
+  display: none;
+}
 section .sneakerhub {
   /* HERO */
   max-width: 1100px;
@@ -115,11 +119,11 @@ section .p-main {
   margin: auto;
 }
 section .button-shop {
-  padding: 10px 30px;
+  padding: 10px 20px;
   border-radius: 10px;
   border: none;
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   margin: 50px 0px;
   font-size: 16px;
 }
@@ -148,9 +152,14 @@ section .container-shoe .shoe3 {
 section .container-shoe .shoe1,
 section .container-shoe .shoe2,
 section .container-shoe .shoe3 {
-  border-radius: 20px;
+  border-radius: 25px;
   width: 100%;
   margin: 0px;
+}
+section .container-shoe .shoe1:hover,
+section .container-shoe .shoe2:hover,
+section .container-shoe .shoe3:hover {
+  opacity: 0.9;
 }
 section .container-articles {
   /* ARTICLES */
@@ -171,9 +180,11 @@ section .tittle-article {
 section .img-article {
   border-radius: 25px;
   width: 100%;
+  max-width: 400px;
 }
 section .img-article:hover {
-  scale: 1.05;
+  transition: 0.2s;
+  transform: scale(1.05);
   box-shadow: 1px 1px 2px rgba(126, 126, 126, 0.3);
   cursor: pointer;
 }
@@ -205,6 +216,10 @@ section .container .row #form-contact .form-floating textarea {
 }
 section .container .row #form-contact #button-contact {
   margin-bottom: 100px;
+  background-color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 /* MAIN CART */
@@ -221,7 +236,7 @@ section .p-cart {
 section .p-take {
   font-size: 22px;
   text-align: center;
-  margin: 100px 0px 35px;
+  margin-top: 100px;
 }
 
 /* MAIN LOGIN*/
@@ -245,6 +260,12 @@ section .container .row {
   display: flex;
   justify-content: center;
   text-align: start;
+}
+section .container #button-login {
+  background-color: #000000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
 /* FOOTER */
@@ -294,11 +315,11 @@ footer .container-footer .about-us .menu-footer ul li {
 footer .container-footer .info-help .menu-footer ul li a,
 footer .container-footer .about-us .menu-footer ul li a {
   text-decoration: none;
-  color: black;
+  color: #000000;
 }
 footer .container-footer .info-help .menu-footer ul li a:hover,
 footer .container-footer .about-us .menu-footer ul li a:hover {
-  color: #888888;
+  color: #c2c2c2;
 }
 footer .container-footer .socialmedia {
   grid-area: menu3;
@@ -355,7 +376,7 @@ footer .container-footer .socialmedia .container-socialmedia .icon-end {
     top: 0;
     left: 0;
     bottom: 0;
-    background-color: white;
+    background-color: #ffffff;
     padding: 55px 50px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
     opacity: 0;
@@ -380,7 +401,7 @@ footer .container-footer .socialmedia .container-socialmedia .icon-end {
   /* MAIN INDEX */
   section .sneakerhub {
     /* HERO */
-    padding-top: 80px;
+    padding-top: 0px;
   }
   section .p-main {
     font-size: 18px;
