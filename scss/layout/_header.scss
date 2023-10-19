@@ -4,10 +4,9 @@ header{
     top: 0;
     width: 100%;
     z-index: 1000;
-    background: $white;
+    background: map-get($colors, secundary);
     .container-header{
-        display: flex;
-        justify-content: space-between;
+        @extend %flex-between;
         align-items: center;
         padding: 40px 50px;
         max-width: 1280px;
@@ -25,14 +24,13 @@ header{
             .nav-list{
                 list-style: none;
                 display: flex;
-                padding: 0px;
-                margin: 0px;
+                @extend %marg-padd;
                 li{
                     a{
                         padding: 0px 25px;
                         text-decoration: none;
                         font-size: 20px;
-                        color: $black;
+                        color: map-get($colors, primary);
                         &:hover{
                             text-decoration: underline;
                             text-decoration-thickness: 1px;

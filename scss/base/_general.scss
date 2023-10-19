@@ -6,27 +6,42 @@
     box-sizing: border-box;
     font-family: 'Assistant', sans-serif;
 }
-h1,
+h1{
+    font-size: map-get($sizes, h1);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
 h2{
-    font-weight: bold;
-    color: black;
+    font-size: map-get($sizes, h2);
+    font-weight: $bold;
+    color: map-get($colors, primary);
 }
 h3{
-    font-weight: bold;
-    color: black;
-    font-size: 32px;
+    font-size: map-get($sizes, h3);
+    font-weight: $bold;
+    color: map-get($colors, primary);
 }
 h4{
-    font-weight: bold;
-    color: black;
-    font-size: 16px;
+    font-size: map-get($sizes, h4);
+    font-weight: $bold;
+    color: map-get($colors, primary);
     text-decoration-thickness: 0.01px;
 }
+h5{
+    font-size: map-get($sizes, h5);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
+h6{
+    font-size: map-get($sizes, h6);
+    font-weight: $bold;
+    color: map-get($colors, primary);
+}
 p{
-    color: black;
+    color: map-get($colors, primary);
 }
 hr{
-    margin: 0px;
+    @extend %marg-padd;
     z-index: 1;
     position: relative;
 }

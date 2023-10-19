@@ -1,8 +1,7 @@
 /* MAIN LOGIN*/
 section{
     .p-login{
-        font-size: 22px;
-        text-align: center;
+        @extend %align-size-p;
         margin-bottom: 55px;
     }
     .text-login{
@@ -23,7 +22,7 @@ section{
             text-align: start;
         }
         #button-login{
-            background-color: $black;
+            background-color: map-get($colors, primary);
             border: none;
             padding: $size-buttons;
             border-radius: $border-buttons;

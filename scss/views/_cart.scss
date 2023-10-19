@@ -1,7 +1,6 @@
 /* MAIN CART */
 section{
     .tittle-page{
-        font-size: 34px;
         padding: 50px 0px;
         text-align: center;
         margin: 0px;
@@ -11,8 +10,7 @@ section{
         text-align: center;
     }
     .p-take{
-        font-size: 22px;
-        text-align: center;
+        @extend %align-size-p;
         margin-top: 100px;
     }
 }

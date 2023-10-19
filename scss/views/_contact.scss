@@ -1,8 +1,7 @@
 /* MAIN CONTACT */
 section{
     .p-contact{
-        font-size: 20px;
-        text-align: center;
+        @extend %align-size-p;
         max-width: 900px;
         margin: auto;
         padding-bottom: 50px;
@@ -17,7 +16,7 @@ section{
                 }
                 #button-contact{
                     margin-bottom: 100px;
-                    background-color: $black;
+                    background-color: map-get($colors, button);
                     border: none;
                     padding: $size-buttons;
                     border-radius: $border-buttons;

@@ -1,8 +1,7 @@
 /* MAIN SHOP*/
 section{
     .p-shop{
-        font-size: 22px;
-        text-align: center;
-        margin: 0px;
+        @extend %align-size-p;
+        @extend %marg-padd;
     }
 }

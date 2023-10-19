@@ -17,21 +17,20 @@ section{
     }
     .p-main{
         max-width: 1000px;
-        font-size: 22px;
+        @extend %align-size-p;
         margin: auto;
     }
     .button-shop{
         padding: $size-buttons;
         border-radius: $border-buttons;
         border: none;
-        background-color: $black;
-        color: $white;
+        background-color: map-get($colors, button);
+        color: map-get($colors, secundary);
         margin: 50px 0px;
         font-size: 16px;
     }
     .tittle-section{
         /* OUR TOP PICKS */
-        font-size: 32px;
         padding: 140px 0px 30px;
         text-align: center;
     }
@@ -65,8 +64,7 @@ section{
     }
     .container-articles{
         /* ARTICLES */
-        display: flex;
-        justify-content: space-between;
+        @extend %flex-between;
         align-content: center;
         margin: 0px;
         padding: 50px 0px;

@@ -1,5 +1,20 @@
-/* GENERAL */
 @import url("https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;700&display=swap");
+section .container-articles, header .container-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+section .p-shop, header .container-header .nav .nav-list, hr {
+  padding: 0px;
+  margin: 0px;
+}
+
+section .p-login, section .p-take, section .p-contact, section .p-shop, section .p-main {
+  text-align: center;
+  font-size: 22px;
+}
+
+/* GENERAL */
 * {
   padding: 0px;
   margin: 0px;
@@ -7,31 +22,48 @@
   font-family: "Assistant", sans-serif;
 }
 
-h1,
-h2 {
+h1 {
+  font-size: 34px;
   font-weight: bold;
-  color: black;
+  color: #000000;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
 }
 
 h3 {
+  font-size: 24px;
   font-weight: bold;
-  color: black;
-  font-size: 32px;
+  color: #000000;
 }
 
 h4 {
-  font-weight: bold;
-  color: black;
   font-size: 16px;
+  font-weight: bold;
+  color: #000000;
   text-decoration-thickness: 0.01px;
 }
 
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+  color: #000000;
+}
+
+h6 {
+  font-size: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+
 p {
-  color: black;
+  color: #000000;
 }
 
 hr {
-  margin: 0px;
   z-index: 1;
   position: relative;
 }
@@ -56,8 +88,6 @@ header {
   background: #ffffff;
 }
 header .container-header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 40px 50px;
   max-width: 1280px;
@@ -77,8 +107,6 @@ header .container-header .nav {
 header .container-header .nav .nav-list {
   list-style: none;
   display: flex;
-  padding: 0px;
-  margin: 0px;
 }
 header .container-header .nav .nav-list li a {
   padding: 0px 25px;
@@ -115,21 +143,19 @@ section .sneakerhub {
 }
 section .p-main {
   max-width: 1000px;
-  font-size: 22px;
   margin: auto;
 }
 section .button-shop {
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
-  background-color: #000000;
+  background-color: #181818;
   color: #ffffff;
   margin: 50px 0px;
   font-size: 16px;
 }
 section .tittle-section {
   /* OUR TOP PICKS */
-  font-size: 32px;
   padding: 140px 0px 30px;
   text-align: center;
 }
@@ -163,8 +189,6 @@ section .container-shoe .shoe3:hover {
 }
 section .container-articles {
   /* ARTICLES */
-  display: flex;
-  justify-content: space-between;
   align-content: center;
   margin: 0px;
   padding: 50px 0px;
@@ -197,16 +221,8 @@ section .final-text {
 }
 
 /* MAIN SHOP*/
-section .p-shop {
-  font-size: 22px;
-  text-align: center;
-  margin: 0px;
-}
-
 /* MAIN CONTACT */
 section .p-contact {
-  font-size: 20px;
-  text-align: center;
   max-width: 900px;
   margin: auto;
   padding-bottom: 50px;
@@ -216,7 +232,7 @@ section .container .row #form-contact .form-floating textarea {
 }
 section .container .row #form-contact #button-contact {
   margin-bottom: 100px;
-  background-color: #000000;
+  background-color: #181818;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
@@ -224,7 +240,6 @@ section .container .row #form-contact #button-contact {
 
 /* MAIN CART */
 section .tittle-page {
-  font-size: 34px;
   padding: 50px 0px;
   text-align: center;
   margin: 0px;
@@ -234,15 +249,11 @@ section .p-cart {
   text-align: center;
 }
 section .p-take {
-  font-size: 22px;
-  text-align: center;
   margin-top: 100px;
 }
 
 /* MAIN LOGIN*/
 section .p-login {
-  font-size: 22px;
-  text-align: center;
   margin-bottom: 55px;
 }
 section .text-login {
@@ -319,7 +330,7 @@ footer .container-footer .about-us .menu-footer ul li a {
 }
 footer .container-footer .info-help .menu-footer ul li a:hover,
 footer .container-footer .about-us .menu-footer ul li a:hover {
-  color: #c2c2c2;
+  color: #8a8a8a;
 }
 footer .container-footer .socialmedia {
   grid-area: menu3;
