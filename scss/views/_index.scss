@@ -28,6 +28,10 @@ section{
         color: map-get($colors, secundary);
         margin: 50px 0px;
         font-size: 16px;
+        a{
+            color: map-get($colors, secundary);
+            text-decoration: none;
+        }
     }
     .tittle-section{
         /* OUR TOP PICKS */

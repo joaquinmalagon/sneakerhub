@@ -22,7 +22,7 @@ section{
             text-align: start;
         }
         #button-login{
-            background-color: map-get($colors, primary);
+            background-color: map-get($colors, button);
             border: none;
             padding: $size-buttons;
             border-radius: $border-buttons;

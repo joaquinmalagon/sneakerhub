@@ -154,6 +154,10 @@ section .button-shop {
   margin: 50px 0px;
   font-size: 16px;
 }
+section .button-shop a {
+  color: #ffffff;
+  text-decoration: none;
+}
 section .tittle-section {
   /* OUR TOP PICKS */
   padding: 140px 0px 30px;
@@ -273,7 +277,7 @@ section .container .row {
   text-align: start;
 }
 section .container #button-login {
-  background-color: #000000;
+  background-color: #181818;
   border: none;
   padding: 10px 20px;
   border-radius: 10px;
