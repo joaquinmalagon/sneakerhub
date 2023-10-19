@@ -300,13 +300,10 @@ footer .container-footer {
 }
 footer .container-footer .info-help {
   grid-area: menu1;
+  padding-right: 20px;
 }
 footer .container-footer .about-us {
   grid-area: menu2;
-}
-footer .container-footer .info-help,
-footer .container-footer .about-us {
-  padding-right: 20px;
 }
 footer .container-footer .info-help .tittle-menu,
 footer .container-footer .about-us .tittle-menu {
@@ -451,6 +448,7 @@ footer .container-footer .socialmedia .container-socialmedia .icon-end {
   footer .container-footer {
     grid-template-columns: auto auto;
     grid-template-rows: 200px;
+    place-items: center;
     grid-template-areas: "menu1 menu2" "menu3 menu3";
   }
   footer .container-footer .socialmedia .container-socialmedia {

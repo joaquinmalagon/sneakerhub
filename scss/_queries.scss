@@ -91,6 +91,7 @@
             .container-footer{
                 grid-template-columns: auto auto;
                 grid-template-rows: 200px;
+                place-items: center;
                 grid-template-areas:
                 "menu1 menu2"
                 "menu3 menu3";

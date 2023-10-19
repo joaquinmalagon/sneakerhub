@@ -14,13 +14,13 @@ footer{
         "menu1 menu2 menu3";
         .info-help{
             grid-area: menu1;
+            padding-right: 20px;
         }
         .about-us{
             grid-area: menu2;
         }
         .info-help,
         .about-us{
-            padding-right: 20px;
             .tittle-menu{
                 padding-bottom: 8px;
                 font-size: 16px !important;
