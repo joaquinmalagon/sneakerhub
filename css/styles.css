@@ -311,6 +311,7 @@ footer .container-footer .about-us {
 footer .container-footer .info-help .tittle-menu,
 footer .container-footer .about-us .tittle-menu {
   padding-bottom: 8px;
+  font-size: 16px;
 }
 footer .container-footer .info-help .menu-footer,
 footer .container-footer .about-us .menu-footer {
