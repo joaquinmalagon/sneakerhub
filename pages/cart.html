@@ -11,6 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- ICONS BOOSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <!-- FAVICON -->
@@ -47,7 +50,7 @@
     </header>
     <main>
         <!-- MAIN CART -->
-        <section>
+        <section data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
             <h1 class="tittle-page">MY CART</h1>
             <p class="p-cart">Your cart is currently empty. Add some sneakers and keep shopping!</p>
             <button class="button-shop">
@@ -55,7 +58,7 @@
             </button>
         </section>
         <!-- ARTICLES -->
-        <section>
+        <section data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
             <p class="p-take">Take a look at these recommendations.</p>
             <div class="container-articles">
                 <div class="product">
@@ -76,57 +79,60 @@
             </div>
         </section>
     </main>
-        <!-- FOOTER -->
-        <footer>
-            <hr>
-            <div class="container-footer">
-                <div class="info-help">
-                    <h2 class="tittle-menu">INFO</h2>
-                    <div class="menu-footer">
-                        <ul>
-                            <li>
-                                <a href="#">HOW TO BUY?</a>
-                            </li>
-                            <li>
-                                <a href="#">PAYMENT METHODS</a>
-                            </li>
-                            <li>
-                                <a href="#">SHIPPING</a>
-                            </li>
-                            <li>
-                                <a href="#">HELP</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="about-us">
-                    <h2 class="tittle-menu">ABOUT US</h2>
-                    <div class="menu-footer">
-                        <ul>
-                            <li>
-                                <a href="#">LOCAL</a>
-                            </li>
-                            <li>
-                                <a href="#">WHOLESALE</a>
-                            </li>
-                            <li>
-                                <a href="#">FAQ</a>
-                            </li>
-                            <li>
-                                <a href="#">T&C</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="socialmedia">
-                    <div class="container-socialmedia">
-                        <a class="icon-start" href="https://www.twitter.com" target="_blank"><img src="../img/twitter.svg" width="17" alt="Twitter"></a>
-                        <a class="icon-mid" href="https://www.instagram.com" target="_blank"><img src="../img/instagram.svg" width="17" alt="Instagram"></a>
-                        <a class="icon-end" href="https://www.whatsapp.com" target="_blank"><img src="../img/whatsapp.svg" width="17" alt="Whatsapp"></a>
-                    </div>
+    <!-- FOOTER -->
+    <footer>
+        <hr>
+        <div class="container-footer">
+            <div class="info-help">
+                <h2 class="tittle-menu">INFO</h2>
+                <div class="menu-footer">
+                    <ul>
+                        <li>
+                            <a href="#">HOW TO BUY?</a>
+                        </li>
+                        <li>
+                            <a href="#">PAYMENT METHODS</a>
+                        </li>
+                        <li>
+                            <a href="#">SHIPPING</a>
+                        </li>
+                        <li>
+                            <a href="#">HELP</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-        </footer>
+            <div class="about-us">
+                <h2 class="tittle-menu">ABOUT US</h2>
+                <div class="menu-footer">
+                    <ul>
+                        <li>
+                            <a href="#">LOCAL</a>
+                        </li>
+                        <li>
+                            <a href="#">WHOLESALE</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">T&C</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="socialmedia">
+                <div class="container-socialmedia">
+                    <a class="icon-start" href="https://www.twitter.com" target="_blank"><img src="../img/twitter.svg" width="17" alt="Twitter"></a>
+                    <a class="icon-mid" href="https://www.instagram.com" target="_blank"><img src="../img/instagram.svg" width="17" alt="Instagram"></a>
+                    <a class="icon-end" href="https://www.whatsapp.com" target="_blank"><img src="../img/whatsapp.svg" width="17" alt="Whatsapp"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        AOS.init();
+    </script>
     <!-- JS -->
     <script src="../js/main.js"></script>
 </body>

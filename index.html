@@ -11,6 +11,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- ICONS BOOSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- FAVICON -->
     <link rel="icon" type="image/svg" href="./img/favicon.svg">
     <!-- CSS -->
@@ -49,26 +52,29 @@
         <!-- HERO -->
         <section>
             <h1 class="h1sh">SNEAKERHUB</h1>
-            <img class="sneakerhub" src="./img/sneakerhub.svg" alt="Logo"> 
-            <div class="p-main">
+            <img class="sneakerhub" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" src="./img/sneakerhub.svg" alt="Logo"> 
+            <div class="p-main" data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
                 <p>Welcome to SneakerHub, where we turn your sneaker dreams into reality! Browse our collection of the latest and greatest sneakers from all your favorite brands.</p>
             </div>
-            <button class="button-shop">
+            <button class="button-shop" data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
                 <a href="./pages/shop.html">Start Shopping</a>
             </button>
+            <div data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
+                <img class="scroll" src="img/scroll.svg" alt="Scroll" width="25">
+            </div>
         </section>
-        <hr>
+        <hr data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
         <!-- OUR TOP PICKS -->
         <section>
-            <h2 class="tittle-section">OUR TOP PICKS</h2>
+            <h2 class="tittle-section" data-aos="fade" data-aos-easing="linear" data-aos-duration="500">OUR TOP PICKS</h2>
             <div class="container-shoe">
-                <img class="shoe1" src="img/sneaker1.webp" alt="Shoe 1">
-                <img class="shoe2" src="img/snkear2.webp" alt="Shoe 2">
-                <img class="shoe3" src="img/snkear3.webp" alt="Shoe 3">
+                <img class="shoe1" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" src="img/sneaker1.webp" alt="Shoe 1">
+                <img class="shoe2" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" src="img/snkear2.webp" alt="Shoe 2">
+                <img class="shoe3" data-aos="fade" data-aos-easing="linear" data-aos-duration="500" src="img/snkear3.webp" alt="Shoe 3">
             </div>
         </section>
         <!-- CALL TO ACTION -->
-        <section>
+        <section data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
             <h2 class="tittle-section">READY, SET, SHOP!</h2>
             <p class="p-main" >Get ready to join a community of fellow sneaker lovers who won't settle for anything but the best. Step out in style and show the world your unique taste in sneakers.</p>
             <button class="button-shop">
@@ -76,7 +82,7 @@
             </button>
         </section>
         <!-- ARTICLES -->
-        <section>
+        <section data-aos="fade" data-aos-easing="linear" data-aos-duration="500">
             <div class="container-articles">
                 <div>
                     <img class="img-article" src="img/article1.webp" alt="Article">
@@ -97,7 +103,7 @@
         </section>
         <!-- FINAL TEXT -->
         <section>
-            <h2 class="final-text">"WE SELL SNEAKERS. YOU GIVE LIFE"</h2>
+            <h2 class="final-text" data-aos="fade-up" data-aos-duration="750">"WE SELL SNEAKERS. YOU GIVE LIFE"</h2>
         </section>
     </main>
         <!-- FOOTER -->
@@ -151,6 +157,10 @@
             </div>
         </div>
     </footer>
+    <script>
+        AOS.init();
+    </script>
+    <!-- JS -->
     <script src="js/main.js"></script>
 </body>
 </html>

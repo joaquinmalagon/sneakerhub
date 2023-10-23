@@ -151,12 +151,16 @@ section .button-shop {
   border: none;
   background-color: #181818;
   color: #ffffff;
-  margin: 50px 0px;
+  margin-top: 50px;
+  margin-bottom: 100px;
   font-size: 16px;
 }
 section .button-shop a {
   color: #ffffff;
   text-decoration: none;
+}
+section .scroll {
+  padding-bottom: 70px;
 }
 section .tittle-section {
   /* OUR TOP PICKS */
