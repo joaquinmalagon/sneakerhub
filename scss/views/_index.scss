@@ -34,8 +34,31 @@ section{
             text-decoration: none;
         }
     }
-    .scroll{
+    .scroll-container{
+        display: flex;
+        justify-content: center;
         padding-bottom: 70px;
+        .scroll-outline{
+            width: 25px;
+        }
+        .scroll-down{
+            position: absolute;
+            background-color: black;
+            width: 5px;
+            height: 6px;
+            border-radius: 100px;
+            margin-top: 5px;
+            animation: moveUpDown 1.5s infinite;
+            @keyframes moveUpDown{
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                    transform: translateY(20px)
+                }
+            }
+        }
     }
     .tittle-section{
         /* OUR TOP PICKS */
